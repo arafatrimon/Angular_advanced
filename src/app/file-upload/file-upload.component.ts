@@ -9,10 +9,15 @@ import { HttpClient } from '@angular/common/http';
 export class FileUploadComponent implements OnInit {
 
 
- 
-
   ngOnInit(): void {
+
+
+   // Array of Base64-encoded image strings
+
+  
   }
+
+
 //   myImage!:Observable<any>;
 //   base64Code:any;
 //   onChange=($event:Event)=>{
@@ -89,6 +94,7 @@ onFileSelected(event: any) {
   }))).then((base64Strings) => {
     console.log(base64Strings);
     this.img=base64Strings;
+    
     // TODO: Use the base64 strings
   }).catch((error) => {
     console.error(error);

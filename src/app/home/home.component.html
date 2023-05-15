@@ -1,1 +1,8 @@
-<div>This is home page</div>
+<button (click)="addImageUpload()">Add Image Upload</button>
+<div *ngFor="let upload of imageUploads; let i = index">
+  <input type="file" multiple (change)="handleFileSelect($event, i)">
+  <button (click)="uploadImages(i)">Upload</button>
+  <div *ngFor="let image of upload.selectedImages">
+    <img [src]="image.url" alt="Uploaded Image">
+  </div>
+</div>
