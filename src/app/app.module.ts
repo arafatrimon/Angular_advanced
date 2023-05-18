@@ -13,7 +13,15 @@ import { AboutComponent } from './about/about.component';
 import { ProductaComponent } from './producta/producta.component';
 import { OffersComponent } from './offers/offers.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FileTestComponent } from './file-test/file-test.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
+
 
 @NgModule({
   declarations: [
@@ -27,14 +35,18 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ProductaComponent,
     OffersComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    FileTestComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+  ReactiveFormsModule,
+  NgxExtendedPdfViewerModule,
+  PdfViewerModule
  
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,35 @@
+<!-- <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="fileUploads">
+      <div *ngFor="let file of uploadForm.get('fileUploads').controls; let i = index">
+        <input type="file" (change)="onFileChange($event)" formControlName="{{i}}">
+      </div>
+    </div>
+    <button type="submit">Upload</button>
+  </form> -->
+
+  <!-- <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="fileUploads">
+      <div *ngFor="let file of uploadForm.get('fileUploads').controls; let i = index">
+        <input type="file" (change)="onFileChange($event)" [formControlName]="i">
+      </div>
+    </div>
+    <button type="submit">Upload</button>
+  </form> -->
+
+  <!-- <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="fileUploads">
+      <div *ngFor="let file of uploadForm.get('fileUploads').controls; let i = index">
+        <input type="file" (change)="onFileChange($event)" [formControlName]="i">
+      </div>
+    </div>
+    <button type="submit">Upload</button>
+  </form> -->
+<!-- 
+  <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="fileUploads">
+      <div *ngFor="let control of fileUploads.controls; let i = index">
+        <input type="file" (change)="onFileChange($event)" [formControl]="control">
+      </div>
+    </div>
+    <button type="submit">Upload</button>
+  </form> -->
